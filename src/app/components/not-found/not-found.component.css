@@ -1,0 +1,52 @@
+/* Base styles */
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+div {
+    text-align: center;
+    margin-top: 350px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Media Queries */
+
+/* For mobile devices (up to 480px) */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 20px; /* Slightly smaller font size for small screens */
+    }
+}
+
+/* For tablets (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+    h1 {
+        font-size: 22px; /* Adjust font size for medium screens */
+    }
+}
+
+/* For desktops and laptops (769px and above) */
+@media (min-width: 769px) {
+    h1 {
+        font-size: 24px; /* Default font size */
+    }
+}

@@ -1,0 +1,70 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto; /* Center the container horizontally */
+    margin-top: 70px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  h4 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0; /* Top and bottom margin */
+    box-sizing: border-box;
+    border: 1px solid #3e3d32; /* Darker border color */
+    background-color: #272822; /* Dark background */
+    color: #f8f8f2; /* Light text color */
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  textarea{
+    height: 200px;
+  }
+  input,textarea:focus {
+    outline: none;
+    border-color: #66d9ef; /* Focus border color */
+    box-shadow: 0 0 5px #66d9ef; /* Focus box shadow */
+  }
+  
+  .red-text {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px; /* Adjusted margin */
+  }
+  
+  .btn-green {
+    background-color: #4caf50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .btn-green:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  .btn-green:hover {
+    background-color: #45a049;
+  }
+  
+  @media (max-width: 600px) {
+    .container {
+      width: 100%;
+      margin: 20px; /* Adjusted margin for smaller screens */
+    }
+  }
+  

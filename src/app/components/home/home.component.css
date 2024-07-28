@@ -1,0 +1,42 @@
+/* Style for the container div */
+.container {
+    margin: 20px;
+    padding: 10px;
+    margin-top: 110px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+/* Style for the list */
+.custom-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Style for list items */
+.custom-list-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Style for the "No Data" message */
+.no-data {
+    font-style: italic;
+    color: #999;
+}
+
+/* Style for links */
+.custom-link {
+    text-decoration: none;
+    color: #0366d6; /* Blue color */
+}
+
+/* Hover effect for links */
+.custom-link:hover {
+    text-decoration: underline;
+}

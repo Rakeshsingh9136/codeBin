@@ -1,0 +1,12 @@
+<div class="container">
+    <ul class="custom-list">
+        @if (items.length == 0) {
+            <li class="custom-list-item no-data">No Data</li>
+        }
+        @for (item of items; track item.id) {
+            <li class="custom-list-item">
+                <a class="custom-link" [routerLink]="['/snippet', item.id]">{{ item.title }}</a>
+            </li>
+        }
+    </ul>
+</div>

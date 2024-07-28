@@ -1,0 +1,23 @@
+<form action="" class="container" [formGroup]="binForm">
+  <h4>Create Code Snippet</h4>
+  <br/>
+  <input type="text" placeholder="title" name="title" id="" [formControl]="title" />
+  <h5 class="red-text" [hidden]="title.valid || title.untouched">
+    Write title of the code
+  </h5>
+  <br/>
+  <textarea
+    type="text"
+    placeholder="Code Snippet"
+    name="code"
+    id=""
+    [formControl]="code"
+  ></textarea>
+  <h5 class="red-text" [hidden]="code.valid || code.untouched">
+    Code is required
+  </h5>
+  <br/>
+  <button class="btn-green" [disabled]="binForm.invalid" (click)="save()">
+    Create
+  </button>
+</form>
